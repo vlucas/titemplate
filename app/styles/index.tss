@@ -1,0 +1,29 @@
+//
+// TSS RESET
+//
+'Label[platform=android]': {
+  color: '#000' // all platforms except Android default to black
+},
+'Window': {
+  backgroundColor: '#fff' // white background instead of default transparent
+},
+"Window[platform=ios]": {
+    top: Alloy.Globals.windowTop // top of window, under statusBar for IOS7
+},
+'Window[platform=android]': {
+  modal: false // make android windows all heavyweight
+},
+'TextField': {
+  borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED // common default style
+},
+'ImageView[platform=ios]': {
+    preventDefaultImage: true // never show ugly image while loading remote
+},
+
+
+//
+// APP STYLES
+//
+".container": {
+	backgroundColor:"white"
+},
